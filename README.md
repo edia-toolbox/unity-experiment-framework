@@ -1,3 +1,29 @@
+# UXF — EDIA Fork 
+
+This is a fork of the [`UXF` repository ](https://github.com/immersivecognition/unity-experiment-framework/) which we tweaked to be compatible with the EDIA toolbox.  
+
+Things we modified: 
+1. Packaging: 
+    - implement the suggested [structure of a custom Unity package](https://docs.unity3d.com/Manual/CustomPackages.html) (i.e., moving most parts into `Assets\Editor`, `Assets\Runtime`, and `Assets\Tests` subfolders)
+    - add assembly definitions `Runtime`, `Editor`, and `Tests`
+2. Trimming: 
+    - removed the `Data UI` component from the `[UXF Rig]` prefab  
+    ... tbc
+
+Relevant branches in this repo:  
+- `master` : more or less up-to-date mirror of the upstream/original UXF repo
+- `main` : "stable" version of the fork to be used for implementation of experiments
+- `dev` :  unstable development branch 
+
+
+
+____
+   
+⤵️ See the original UXF README below ⤵️
+____
+
+
+
 <p align="center">
   <img src="media/banner-2-0-small.png">
 </p>
