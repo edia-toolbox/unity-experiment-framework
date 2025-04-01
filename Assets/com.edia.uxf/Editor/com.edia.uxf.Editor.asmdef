@@ -1,0 +1,16 @@
+{
+    "name": "com.edia.uxf.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6293785af1473f2438a6a9e672c48391"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
