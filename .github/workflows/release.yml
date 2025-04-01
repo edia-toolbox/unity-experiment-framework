@@ -30,7 +30,7 @@ jobs:
             echo "TAG_NAME=$TAG" >> $GITHUB_ENV
           else
             echo "No valid release tag found in commit message. Skipping release."
-            exit 0
+            exit 1
           fi
 
       - name: Extract Subfolder and Push Branch
