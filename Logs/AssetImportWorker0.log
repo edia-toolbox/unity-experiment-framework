@@ -219,3 +219,285 @@ Received Import Request.
 Start importing Assets/UXF/Scripts/SessionBuilders using Guid(8c52ae45616066648b8d13303cbbd500) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c0149aff2107a9d425797372a2310dd') in 0.0006933 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.836 seconds
+Refreshing native plugins compatible for Editor in 3.83 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.239 seconds
+Domain Reload Profiling: 3072ms
+	BeginReloadAssembly (859ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (72ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (255ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (795ms)
+		LoadAssemblies (830ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (274ms)
+			TypeCache.Refresh (30ms)
+				TypeCache.ScanAssembly (7ms)
+			BuildScriptInfoCaches (224ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1240ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (982ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (170ms)
+			ProcessInitializeOnLoadAttributes (454ms)
+			ProcessInitializeOnLoadMethodAttributes (317ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 4.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2683 unused Assets / (0.8 MB). Loaded Objects now: 3166.
+Memory consumption went from 75.4 MB to 74.6 MB.
+Total: 16.387000 ms (FindLiveObjects: 0.439900 ms CreateObjectMapping: 0.396000 ms MarkObjects: 14.054000 ms  DeleteObjects: 1.495500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2667 unused Assets / (0.6 MB). Loaded Objects now: 3168.
+Memory consumption went from 75.5 MB to 74.8 MB.
+Total: 25.486200 ms (FindLiveObjects: 0.804600 ms CreateObjectMapping: 0.712800 ms MarkObjects: 22.534400 ms  DeleteObjects: 1.432700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.138 seconds
+Refreshing native plugins compatible for Editor in 5.28 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.413 seconds
+Domain Reload Profiling: 2549ms
+	BeginReloadAssembly (347ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (635ms)
+		LoadAssemblies (572ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (262ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (230ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1414ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1147ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (202ms)
+			ProcessInitializeOnLoadAttributes (547ms)
+			ProcessInitializeOnLoadMethodAttributes (353ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 4.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2683 unused Assets / (0.7 MB). Loaded Objects now: 3166.
+Memory consumption went from 75.4 MB to 74.7 MB.
+Total: 22.765100 ms (FindLiveObjects: 0.447400 ms CreateObjectMapping: 0.420400 ms MarkObjects: 20.216700 ms  DeleteObjects: 1.679100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 54555.147195 seconds.
+  path: Assets/com.edia.uxf/Runtime
+  artifactKey: Guid(8171f7d3a9766b64f98c2e045cebd630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Runtime using Guid(8171f7d3a9766b64f98c2e045cebd630) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c14b79ebb7037711136550411688c854') in 0.0084084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.013149 seconds.
+  path: Assets/com.edia.uxf
+  artifactKey: Guid(1f7c71c42439f024b9f8a44e597743e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf using Guid(1f7c71c42439f024b9f8a44e597743e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b478f147ea60c2e9fd990e1625bb171') in 0.0008912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.636360 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts
+  artifactKey: Guid(8d9c167ebb12ff349a5a2fb331fbc930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Runtime/Scripts using Guid(8d9c167ebb12ff349a5a2fb331fbc930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa6ec1d4d4a190a0d39ca7537db70d91') in 0.0007738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.212021 seconds.
+  path: Assets/com.edia.uxf/Runtime/com.edia.uxf.Runtime.asmdef
+  artifactKey: Guid(6293785af1473f2438a6a9e672c48391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Runtime/com.edia.uxf.Runtime.asmdef using Guid(6293785af1473f2438a6a9e672c48391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d177e1d8cc48e48b7e99a176c45ddbf') in 0.0007294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.174503 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts
+  artifactKey: Guid(baa825f2c8c42774c94e5f68c249c949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Editor/Scripts using Guid(baa825f2c8c42774c94e5f68c249c949) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a91fd707ab0bb2138d0555c955d33b48') in 0.0011961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.081 seconds
+Refreshing native plugins compatible for Editor in 4.50 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.238 seconds
+Domain Reload Profiling: 2316ms
+	BeginReloadAssembly (340ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (539ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (202ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1239ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (985ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (159ms)
+			ProcessInitializeOnLoadAttributes (450ms)
+			ProcessInitializeOnLoadMethodAttributes (338ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 4.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2683 unused Assets / (0.7 MB). Loaded Objects now: 3166.
+Memory consumption went from 75.5 MB to 74.8 MB.
+Total: 19.476400 ms (FindLiveObjects: 0.445400 ms CreateObjectMapping: 0.528000 ms MarkObjects: 17.263900 ms  DeleteObjects: 1.237400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.155864 seconds.
+  path: Assets/com.edia.uxf/Editor
+  artifactKey: Guid(6bf2be1d645ae0d4da07fefbf3d37ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Editor using Guid(6bf2be1d645ae0d4da07fefbf3d37ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d1827ae8cef6c9245909dd14de34b85') in 0.0027143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.443816 seconds.
+  path: Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef
+  artifactKey: Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef using Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eff47eabd5565da41a0f6501cb83bcf5') in 0.0010281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.447336 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/AWSCredentialsEditor.cs
+  artifactKey: Guid(6840265525ea00d47986fd7fefdea049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/AWSCredentialsEditor.cs using Guid(6840265525ea00d47986fd7fefdea049) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6077dbcc05501d02f1923fa5b3890b75') in 0.0006919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.959721 seconds.
+  path: Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef
+  artifactKey: Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef using Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e86a0c1ab8a710c8d2f5daeb9bda83a7') in 0.0007189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.029 seconds
+Refreshing native plugins compatible for Editor in 4.54 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.192 seconds
+Domain Reload Profiling: 2218ms
+	BeginReloadAssembly (323ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (555ms)
+		LoadAssemblies (516ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (187ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1192ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (950ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (153ms)
+			ProcessInitializeOnLoadAttributes (435ms)
+			ProcessInitializeOnLoadMethodAttributes (322ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 7.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2683 unused Assets / (0.5 MB). Loaded Objects now: 3166.
+Memory consumption went from 75.6 MB to 75.1 MB.
+Total: 19.257800 ms (FindLiveObjects: 0.873600 ms CreateObjectMapping: 0.575100 ms MarkObjects: 16.613500 ms  DeleteObjects: 1.193900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
