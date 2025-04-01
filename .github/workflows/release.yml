@@ -1,0 +1,31 @@
+name: Release Subfolder
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "ci@github.com"
+          git config --global user.name "GitHub Actions Bot"
+
+      - name: Extract Subfolder
+        run: |
+          git subtree split --prefix=Assets/com.edia.uxf -b subfolder-branch
+          git push -f origin subfolder-branch
+          echo "TAG_NAME=subfolder-$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create $TAG_NAME --title "Release $TAG_NAME" --target subfolder-branch
