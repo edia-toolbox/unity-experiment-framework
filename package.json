@@ -1,0 +1,22 @@
+{
+  "name": "com.edia.uxf",
+  "displayName": "EDIA UXF fork",
+  "version": "0.1.0",
+  "unity": "2022.3",
+  "description": "EDIA fork of the Unity Experiment Framework.",
+  "keywords": [
+    "vr"
+  ],  
+  "author": {
+    "name": "Jack Brookes and EDIA"
+  },
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Space Shuttle",
+      "description": "UXF Space Shuttle Demo",
+      "path": "Examples/1a_SpaceShuttle"
+    }
+  ],
+  "hideInEditor": false
+}
