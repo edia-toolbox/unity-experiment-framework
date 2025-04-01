@@ -1,0 +1,17 @@
+{
+    "name": "com.edia.uxf.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6293785af1473f2438a6a9e672c48391",
+        "GUID:dbe0fc5fc8dde5943bb2ede852bbe553"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

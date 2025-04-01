@@ -501,3 +501,11 @@ Memory consumption went from 75.6 MB to 75.1 MB.
 Total: 19.257800 ms (FindLiveObjects: 0.873600 ms CreateObjectMapping: 0.575100 ms MarkObjects: 16.613500 ms  DeleteObjects: 1.193900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1502.220692 seconds.
+  path: Assets/com.edia.uxf/Runtime/Prefabs/[UXF_Rig].prefab
+  artifactKey: Guid(0a3b6392f04558844bd340e68ced1ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/Runtime/Prefabs/[UXF_Rig].prefab using Guid(0a3b6392f04558844bd340e68ced1ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '255e1a6b499969f8cc05c76134eb7900') in 0.1858772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 829
+
