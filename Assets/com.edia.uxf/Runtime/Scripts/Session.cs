@@ -13,7 +13,10 @@ namespace UXF
     /// <summary>
     /// The Session represents a single "run" of an experiment, and contains all information about that run. 
     /// </summary>
-    [ExecuteInEditMode]
+    
+    // commented out for EDIA as it was creating issues in Editor
+    //[ExecuteInEditMode]
+    
     public class Session : MonoBehaviour, IExperimentUnit, IDataAssociatable
     {
         /// <summary>
