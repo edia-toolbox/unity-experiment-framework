@@ -11,12 +11,5 @@
     "name": "Jack Brookes and EDIA"
   },
   "dependencies": {},
-  "samples": [
-    {
-      "displayName": "Space Shuttle",
-      "description": "UXF Space Shuttle Demo",
-      "path": "Examples/1a_SpaceShuttle"
-    }
-  ],
   "hideInEditor": false
 }
