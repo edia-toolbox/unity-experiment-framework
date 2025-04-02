@@ -10,3 +10,4 @@ v0.1.1:
 - added Logs folder to .gitignore
 - commented out `[ExecuteInEditMode]` attribute in `Session.cs` 
 - removed `Download or copy`, `Web AWS DynamoDB`, `HTTP POST Request` from `[ UXF_Rig ]` prefab
+- set editor asmdef to Editor only
