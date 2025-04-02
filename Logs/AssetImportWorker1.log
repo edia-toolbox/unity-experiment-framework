@@ -15,7 +15,7 @@ D:/Felix/Projects/3DIA/unity-experiment-framework
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62651
+50479
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/Felix/Projects/3DIA/unity-experiment-framework
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [60828]  Target information:
+Player connection [11632]  Target information:
 
-Player connection [60828]  * "[IP] 141.14.225.99 [Port] 0 [Flags] 2 [Guid] 1788358006 [EditorId] 1788358006 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GFV8QQIK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11632]  * "[IP] 141.14.225.99 [Port] 0 [Flags] 2 [Guid] 3669891984 [EditorId] 3669891984 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GFV8QQIK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [60828] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [60828] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11632] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11632] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 83.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Resources/UnitySubsystems
@@ -92,64 +92,62 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.006716 seconds.
-- Loaded All Assemblies, in  0.778 seconds
+Registered in 0.007319 seconds.
+- Loaded All Assemblies, in  3.301 seconds
 Native extension for Android target not found
-InvalidOperationException: Cannot process request because the process (23092) has exited.
-  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <ce414afeeb0f4550b5da58efd5c2db86>:0 
-  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <ce414afeeb0f4550b5da58efd5c2db86>:0 
-  at System.Diagnostics.Process.Kill () [0x00002] in <ce414afeeb0f4550b5da58efd5c2db86>:0 
-  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
-  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x00174] in /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs:326 
-  at UnityEditor.Android.TargetScanWorker.ScanSync () [0x00049] in /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/TargetScanWorker.cs:164 
-  at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00087] in /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:106 
-  at UnityEditor.Android.TargetExtension.OnLoad () [0x000af] in /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:67 
-  at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x000ba] in <0a4d86c6e1e443e4b37da89bc22f5b9c>:0 
-UnityEngine.DebugLogHandler:Internal_LogException_Injected(Exception, IntPtr)
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules()
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs:348)
+UnityEditor.Android.TargetScanWorker:ScanSync () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/TargetScanWorker.cs:164)
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[]) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:106)
+UnityEditor.Android.TargetExtension:OnLoad () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:67)
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
 
-(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs Line: 326)
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs Line: 348)
 
+Android Extension - Scanning For ADB Devices 3511 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.159 seconds
-Domain Reload Profiling: 3933ms
-	BeginReloadAssembly (244ms)
+- Finished resetting the current domain, in  4.943 seconds
+Domain Reload Profiling: 8237ms
+	BeginReloadAssembly (352ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (332ms)
-		LoadAssemblies (239ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (450ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (138ms)
+	LoadAllAssembliesAndSetupDomain (2313ms)
+		LoadAssemblies (339ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (326ms)
-			TypeCache.Refresh (323ms)
-				TypeCache.ScanAssembly (296ms)
+		AnalyzeDomain (2305ms)
+			TypeCache.Refresh (2301ms)
+				TypeCache.ScanAssembly (1290ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (3160ms)
+	FinalizeReload (4944ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3087ms)
+		SetupLoadedEditorAssemblies (4813ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2619ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (218ms)
-			ProcessInitializeOnLoadMethodAttributes (141ms)
+			InitializePlatformSupportModulesInManaged (3902ms)
+			SetLoadedEditorAssemblies (241ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (308ms)
+			ProcessInitializeOnLoadMethodAttributes (174ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -159,259 +157,733 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.660 seconds
-Refreshing native plugins compatible for Editor in 3.82 ms, found 2 plugins.
+- Loaded All Assemblies, in 26.327 seconds
+Refreshing native plugins compatible for Editor in 5.18 ms, found 2 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.433 seconds
-Domain Reload Profiling: 3087ms
-	BeginReloadAssembly (332ms)
+- Finished resetting the current domain, in  1.761 seconds
+Domain Reload Profiling: 27692ms
+	BeginReloadAssembly (7313ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (1082ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (83ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (1157ms)
-		LoadAssemblies (740ms)
+		CreateAndSetChildDomain (1277ms)
+	RebuildCommonClasses (889ms)
+	RebuildNativeTypeToScriptingClass (1092ms)
+	initialDomainReloadingComplete (3495ms)
+	LoadAllAssembliesAndSetupDomain (13141ms)
+		LoadAssemblies (11426ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (617ms)
-			TypeCache.Refresh (544ms)
-				TypeCache.ScanAssembly (501ms)
-			BuildScriptInfoCaches (54ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1434ms)
+		AnalyzeDomain (3414ms)
+			TypeCache.Refresh (3284ms)
+				TypeCache.ScanAssembly (2499ms)
+			BuildScriptInfoCaches (77ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1762ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1136ms)
+		SetupLoadedEditorAssemblies (1448ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (192ms)
-			ProcessInitializeOnLoadAttributes (512ms)
-			ProcessInitializeOnLoadMethodAttributes (385ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (236ms)
+			ProcessInitializeOnLoadAttributes (642ms)
+			ProcessInitializeOnLoadMethodAttributes (513ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 7.50 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (25ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2685 unused Assets / (0.8 MB). Loaded Objects now: 3164.
-Memory consumption went from 75.7 MB to 74.9 MB.
-Total: 33.500800 ms (FindLiveObjects: 0.547800 ms CreateObjectMapping: 2.279700 ms MarkObjects: 28.717400 ms  DeleteObjects: 1.953900 ms)
+Unloading 2664 unused Assets / (0.9 MB). Loaded Objects now: 3143.
+Memory consumption went from 77.7 MB to 76.9 MB.
+Total: 15.567700 ms (FindLiveObjects: 0.479200 ms CreateObjectMapping: 0.524700 ms MarkObjects: 13.273600 ms  DeleteObjects: 1.288100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2214.267417 seconds.
+  path: Assets/com.edia.uxf/VERSION.txt
+  artifactKey: Guid(ee04e43df99a47541bda32ec18dfd354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/com.edia.uxf/VERSION.txt using Guid(ee04e43df99a47541bda32ec18dfd354) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '223b8aed97110f6e7e2332927126e431') in 0.0402235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.873 seconds
-Refreshing native plugins compatible for Editor in 4.05 ms, found 2 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.243 seconds
-Domain Reload Profiling: 3114ms
-	BeginReloadAssembly (868ms)
-		ExecutionOrderSort (1ms)
-		DisableScriptedObjects (72ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (276ms)
-	RebuildCommonClasses (81ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (829ms)
-		LoadAssemblies (866ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (286ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (5ms)
-			BuildScriptInfoCaches (239ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1244ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (988ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (172ms)
-			ProcessInitializeOnLoadAttributes (453ms)
-			ProcessInitializeOnLoadMethodAttributes (320ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 5.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2683 unused Assets / (506.6 KB). Loaded Objects now: 3164.
-Memory consumption went from 74.9 MB to 74.4 MB.
-Total: 16.236600 ms (FindLiveObjects: 0.469500 ms CreateObjectMapping: 0.427800 ms MarkObjects: 14.080400 ms  DeleteObjects: 1.257100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.82 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2667 unused Assets / (0.6 MB). Loaded Objects now: 3166.
-Memory consumption went from 74.9 MB to 74.4 MB.
-Total: 24.741900 ms (FindLiveObjects: 0.561700 ms CreateObjectMapping: 0.493400 ms MarkObjects: 22.040200 ms  DeleteObjects: 1.645000 ms)
+Unloading 2642 unused Assets / (0.7 MB). Loaded Objects now: 3144.
+Memory consumption went from 76.3 MB to 75.5 MB.
+Total: 18.009600 ms (FindLiveObjects: 0.448600 ms CreateObjectMapping: 0.383100 ms MarkObjects: 16.102400 ms  DeleteObjects: 1.074000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.141 seconds
-Refreshing native plugins compatible for Editor in 5.41 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.029 seconds
+Refreshing native plugins compatible for Editor in 3.91 ms, found 2 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.433 seconds
-Domain Reload Profiling: 2571ms
-	BeginReloadAssembly (347ms)
+- Finished resetting the current domain, in  1.199 seconds
+Domain Reload Profiling: 2225ms
+	BeginReloadAssembly (327ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (636ms)
-		LoadAssemblies (576ms)
+		CreateAndSetChildDomain (74ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (546ms)
+		LoadAssemblies (517ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (262ms)
-			TypeCache.Refresh (18ms)
-				TypeCache.ScanAssembly (5ms)
-			BuildScriptInfoCaches (230ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (187ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (1434ms)
+	FinalizeReload (1200ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1160ms)
+		SetupLoadedEditorAssemblies (962ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
+			InitializePlatformSupportModulesInManaged (21ms)
 			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (207ms)
-			ProcessInitializeOnLoadAttributes (552ms)
-			ProcessInitializeOnLoadMethodAttributes (354ms)
+			BeforeProcessingInitializeOnLoad (160ms)
+			ProcessInitializeOnLoadAttributes (438ms)
+			ProcessInitializeOnLoadMethodAttributes (324ms)
 			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 7.10 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2683 unused Assets / (0.7 MB). Loaded Objects now: 3164.
-Memory consumption went from 74.9 MB to 74.2 MB.
-Total: 22.492100 ms (FindLiveObjects: 0.654500 ms CreateObjectMapping: 0.636900 ms MarkObjects: 19.832400 ms  DeleteObjects: 1.366400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.098 seconds
-Refreshing native plugins compatible for Editor in 4.06 ms, found 2 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.229 seconds
-Domain Reload Profiling: 2324ms
-	BeginReloadAssembly (345ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (81ms)
-	RebuildCommonClasses (76ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (599ms)
-		LoadAssemblies (543ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (250ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (6ms)
-			BuildScriptInfoCaches (217ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1229ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (958ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (443ms)
-			ProcessInitializeOnLoadMethodAttributes (318ms)
-			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 7.09 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 3.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2683 unused Assets / (0.6 MB). Loaded Objects now: 3164.
-Memory consumption went from 74.9 MB to 74.3 MB.
-Total: 18.926800 ms (FindLiveObjects: 0.500300 ms CreateObjectMapping: 0.624300 ms MarkObjects: 16.713000 ms  DeleteObjects: 1.087600 ms)
+Unloading 2660 unused Assets / (0.7 MB). Loaded Objects now: 3144.
+Memory consumption went from 77.2 MB to 76.4 MB.
+Total: 13.927200 ms (FindLiveObjects: 0.409300 ms CreateObjectMapping: 0.352000 ms MarkObjects: 12.127400 ms  DeleteObjects: 1.037400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2641 unused Assets / (0.6 MB). Loaded Objects now: 3143.
+Memory consumption went from 77.3 MB to 76.7 MB.
+Total: 15.394900 ms (FindLiveObjects: 0.468700 ms CreateObjectMapping: 0.402400 ms MarkObjects: 13.335500 ms  DeleteObjects: 1.186500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.025 seconds
-Refreshing native plugins compatible for Editor in 4.19 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.990 seconds
+Refreshing native plugins compatible for Editor in 5.84 ms, found 2 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.188 seconds
-Domain Reload Profiling: 2210ms
-	BeginReloadAssembly (331ms)
+- Finished resetting the current domain, in  1.154 seconds
+Domain Reload Profiling: 2142ms
+	BeginReloadAssembly (307ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (75ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (72ms)
 	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (545ms)
-		LoadAssemblies (522ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (486ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (212ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (181ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1189ms)
+		AnalyzeDomain (225ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (203ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1155ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (937ms)
+		SetupLoadedEditorAssemblies (920ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (21ms)
 			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (153ms)
-			ProcessInitializeOnLoadAttributes (432ms)
-			ProcessInitializeOnLoadMethodAttributes (315ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (159ms)
+			ProcessInitializeOnLoadAttributes (420ms)
+			ProcessInitializeOnLoadMethodAttributes (301ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 6.55 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 3.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2683 unused Assets / (0.6 MB). Loaded Objects now: 3164.
-Memory consumption went from 75.1 MB to 74.5 MB.
-Total: 18.484300 ms (FindLiveObjects: 0.708200 ms CreateObjectMapping: 0.684600 ms MarkObjects: 16.033300 ms  DeleteObjects: 1.056700 ms)
+Unloading 2659 unused Assets / (0.6 MB). Loaded Objects now: 3143.
+Memory consumption went from 77.1 MB to 76.4 MB.
+Total: 13.799600 ms (FindLiveObjects: 0.425600 ms CreateObjectMapping: 0.357200 ms MarkObjects: 11.991900 ms  DeleteObjects: 1.023700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 756.252452 seconds.
+  path: Assets/com.edia.uxf/CHANGELOG.md
+  artifactKey: Guid(f8a0716406c4a9d459e779b76e967ee9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/CHANGELOG.md using Guid(f8a0716406c4a9d459e779b76e967ee9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '330e844edf46059f8e2c4a1476bb51c9') in 0.1363667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/BillingMode.json
+  artifactKey: Guid(679d07ba20d4c614fb40b6c569f3b429) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/BillingMode.json using Guid(679d07ba20d4c614fb40b6c569f3b429) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '884a3724567feb7a9d6b5e8d99efcd91') in 0.0149753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/dice-icon.png
+  artifactKey: Guid(99d12daf6c804f64d9f0f126d38a536a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/dice-icon.png using Guid(99d12daf6c804f64d9f0f126d38a536a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd5610cf680d46884d4ec00adacd9f315') in 0.1737009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/Utilities.cs
+  artifactKey: Guid(36758568213bffb46a644fbbe342c812) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/Utilities.cs using Guid(36758568213bffb46a644fbbe342c812) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e0b9b5b689b79e530e724d1393f39c1a') in 0.0166489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestMultithreading.cs
+  artifactKey: Guid(242033db2df0e1148bd368d0a7486942) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestMultithreading.cs using Guid(242033db2df0e1148bd368d0a7486942) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '43f40ff1808dc83e33dd75b8154b2c5b') in 0.0154131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestSaveTrialData.cs
+  artifactKey: Guid(f7f1695f447400a44a2071453db8e739) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestSaveTrialData.cs using Guid(f7f1695f447400a44a2071453db8e739) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a815819a820a8c928cb9280fb82f3f5d') in 0.0160756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/DataHandling/DataHandler.cs
+  artifactKey: Guid(38af5a0a05fd2cb4a9422bdcfab7e1a0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/DataHandling/DataHandler.cs using Guid(38af5a0a05fd2cb4a9422bdcfab7e1a0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'db98bdf5cb172b69e6a1bf7b9d6af56b') in 0.0172419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/DataHandling/ExampleCustomDataHandler.cs
+  artifactKey: Guid(970cae088eab7274b9c480fbd38a023a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/DataHandling/ExampleCustomDataHandler.cs using Guid(970cae088eab7274b9c480fbd38a023a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b574f4a505ebbbcb2b2fc94581ec1d5') in 0.0190399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/com.edia.uxf/Runtime/Plugins/System.Windows.Forms.dll
+  artifactKey: Guid(1c4135100d47ce147971a58e9529e539) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Plugins/System.Windows.Forms.dll using Guid(1c4135100d47ce147971a58e9529e539) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6cf58790c8b701123ef1b50a6741f258') in 0.0193663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/com.edia.uxf/Runtime/Plugins/WebFunctions.jslib
+  artifactKey: Guid(41e120e58c46a8440b68d8e1acf9c355) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Plugins/WebFunctions.jslib using Guid(41e120e58c46a8440b68d8e1acf9c355) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd37def4dae897645806770a4f5e9f5b') in 0.020244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestLocale.cs
+  artifactKey: Guid(457dc01f7e1398645acaab0254c520a0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestLocale.cs using Guid(457dc01f7e1398645acaab0254c520a0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ef9f5de4bda367ead04dcdefa0351beb') in 0.0154327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/ResultsDict.cs
+  artifactKey: Guid(37745fa5dd38b3a4b9874f882278c68c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/ResultsDict.cs using Guid(37745fa5dd38b3a4b9874f882278c68c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a36bbd62f103e52f15a61d0c7f49b781') in 0.0157976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/tick-icon.png
+  artifactKey: Guid(9e4535d6950b02a46981ee74266d6a4b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/tick-icon.png using Guid(9e4535d6950b02a46981ee74266d6a4b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0f171f8feef43cb2200278a53a5dfd66') in 0.040175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/ExecutionOrderManager.cs
+  artifactKey: Guid(7302f7d3f7e72c046bc45ae2e4764b8c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/ExecutionOrderManager.cs using Guid(7302f7d3f7e72c046bc45ae2e4764b8c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6963c0b189bc6f090ad198f41085e086') in 0.018501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/Comment.cs
+  artifactKey: Guid(1a65f8666dbecaf41b8ef66e0da5a398) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/Comment.cs using Guid(1a65f8666dbecaf41b8ef66e0da5a398) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'de7acef9d72aa16d792d251621c83191') in 0.0164195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/UIController.cs
+  artifactKey: Guid(579ee9fcb925a384798cfbbee41ed284) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/UIController.cs using Guid(579ee9fcb925a384798cfbbee41ed284) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '958a20ec4f8133fcadf32d220c553e7e') in 0.0170528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/HideIf/HideIfAttributeDrawer.cs
+  artifactKey: Guid(43216db9492444f4da663396928c5588) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/HideIf/HideIfAttributeDrawer.cs using Guid(43216db9492444f4da663396928c5588) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2ca43a6cd64f05c343cbf67fbfb88c2b') in 0.0167612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/BuildTargetDrawer.cs
+  artifactKey: Guid(8fcb555ea8ba9444cb19912e303d5c55) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/BuildTargetDrawer.cs using Guid(8fcb555ea8ba9444cb19912e303d5c55) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '98b779dd138cd54cb3930193fcdf7054') in 0.0159019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/ClickOutsidePanelEvent.cs
+  artifactKey: Guid(d664779ce196f334eb842a1f314a01c6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/ClickOutsidePanelEvent.cs using Guid(d664779ce196f334eb842a1f314a01c6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '96b16b68bedb1bbeb46ca8535376a439') in 0.0180223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/browse-icon.png
+  artifactKey: Guid(0144d9343ad52f24e8a3d1b1b6aec7d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/browse-icon.png using Guid(0144d9343ad52f24e8a3d1b1b6aec7d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e95d8184e1913905004dfb7af9f5c4d6') in 0.0418341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/IExperimentBuilder.cs
+  artifactKey: Guid(606fe40b36394314b8e139b0f7d6b711) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/IExperimentBuilder.cs using Guid(606fe40b36394314b8e139b0f7d6b711) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6713747ceda2ea6d55b86286a9c0ff0f') in 0.0179595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/ISettingsContainer.cs
+  artifactKey: Guid(92168f4f784b4a042ab4515e37d07229) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/ISettingsContainer.cs using Guid(92168f4f784b4a042ab4515e37d07229) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '661f97ae15eb7c980346fcee729145aa') in 0.0184673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/Extensions.cs
+  artifactKey: Guid(0948c09616be3ed4d93f59598536c820) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/Extensions.cs using Guid(0948c09616be3ed4d93f59598536c820) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '03445c1335f63f4fc50f987e931182e7') in 0.01769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/com.edia.uxf/ThirdPartyNotices.md
+  artifactKey: Guid(b1dbd89658bd5dd4b80dcd9c3337fdff) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/ThirdPartyNotices.md using Guid(b1dbd89658bd5dd4b80dcd9c3337fdff) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90959c2dd7d0b10e8d39151e1437ca92') in 0.0274229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/DataHandling/WebAWSDynamoDB.cs
+  artifactKey: Guid(09592b9eae60ee242bf6043521f6f9d4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/DataHandling/WebAWSDynamoDB.cs using Guid(09592b9eae60ee242bf6043521f6f9d4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0419a051d17f1ef2c708d4693655d07d') in 0.0172456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestSessionBehaviour.cs
+  artifactKey: Guid(ab9d51b5b8b72e34d8127c2133023686) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestSessionBehaviour.cs using Guid(ab9d51b5b8b72e34d8127c2133023686) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '769276118a0071ec356dc7b8a2453b8d') in 0.0169602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/LinkOpener.cs
+  artifactKey: Guid(1783c300fd0a7c54aabb2f9016a3f10d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/LinkOpener.cs using Guid(1783c300fd0a7c54aabb2f9016a3f10d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5ce9281eedda3337a672667bc0f420ff') in 0.0184141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Trackers/PositionRotationTracker.cs
+  artifactKey: Guid(13dbc7aef009231419c2e645c8e8579b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Trackers/PositionRotationTracker.cs using Guid(13dbc7aef009231419c2e645c8e8579b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fe682d47ef16598befc4cb3057be13b5') in 0.0185703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/UXFSessionDisplay.cs
+  artifactKey: Guid(b75c179214ec90541bf2a363fee3f278) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/UXFSessionDisplay.cs using Guid(b75c179214ec90541bf2a363fee3f278) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1c027cb93467cb91a311246144afdec4') in 0.0160082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/uxf_icon.png
+  artifactKey: Guid(2105342618542bf40a8bcb8424f4fb49) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/uxf_icon.png using Guid(2105342618542bf40a8bcb8424f4fb49) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '506e060e7436ee2ef062abbc545c17cd') in 0.027861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/DataHandlerDrawer.cs
+  artifactKey: Guid(ba41247db6c38474c822f0cd7aecc118) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/DataHandlerDrawer.cs using Guid(ba41247db6c38474c822f0cd7aecc118) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2a86c8f6403a4bbc5183e7ba838c19a7') in 0.0164185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/EasyEventEditor.cs
+  artifactKey: Guid(26c002334a3a8544287d984c81743081) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/EasyEventEditor.cs using Guid(26c002334a3a8544287d984c81743081) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9a443b67391104b63d7d5caadf44281') in 0.0167221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/com.edia.uxf/Runtime/com.edia.uxf.Runtime.asmdef
+  artifactKey: Guid(6293785af1473f2438a6a9e672c48391) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/com.edia.uxf.Runtime.asmdef using Guid(6293785af1473f2438a6a9e672c48391) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a8c7660582079eda57e63e309825aa31') in 0.0158843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef
+  artifactKey: Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/com.edia.uxf.Editor.asmdef using Guid(dbe0fc5fc8dde5943bb2ede852bbe553) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e97c8c98c1c96f3040004a361a9e1a5a') in 0.0149011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/EventSystemFallback.cs
+  artifactKey: Guid(4c3ebbdce86e7024d8e94ef506b33b5b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/EventSystemFallback.cs using Guid(4c3ebbdce86e7024d8e94ef506b33b5b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5b5d511c2abac1257f9ecb43e9c6541f') in 0.0167742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/com.edia.uxf/Runtime/Prefabs/Etc/EventSystem.prefab
+  artifactKey: Guid(e558e6a724cb5824ca99dd67064d4563) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Prefabs/Etc/EventSystem.prefab using Guid(e558e6a724cb5824ca99dd67064d4563) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1a5f9d30f6103ec7081448cf3f5daefc') in 0.0599127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestFileIOManager.cs
+  artifactKey: Guid(7697600caad7dea4498d61f622296952) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestFileIOManager.cs using Guid(7697600caad7dea4498d61f622296952) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fc5bba04464ec735711b8a706154cfe3') in 0.0181854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/com.edia.uxf/Runtime/Prefabs/[UXF_Rig].prefab
+  artifactKey: Guid(0a3b6392f04558844bd340e68ced1ff9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Prefabs/[UXF_Rig].prefab using Guid(0a3b6392f04558844bd340e68ced1ff9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eb7bc6beafb2e290f22c239d05d2f42e') in 0.0778131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/ReorderableInspector/ReorderableAttribute.cs
+  artifactKey: Guid(8c5391aec2743e9409851d8977727c1f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/ReorderableInspector/ReorderableAttribute.cs using Guid(8c5391aec2743e9409851d8977727c1f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1a9c2746958a6022b80cd4d0808e4f1b') in 0.0158625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/StandaloneFileBrowserWindows.cs
+  artifactKey: Guid(194e247414a78461d83ae606c1b96917) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/StandaloneFileBrowserWindows.cs using Guid(194e247414a78461d83ae606c1b96917) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ef92a224f725a7e28c3462b8f482cf53') in 0.0188746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/ReorderableInspector/EditScriptableAttribute.cs
+  artifactKey: Guid(315cac858c8879242bc87164607c4c5d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/ReorderableInspector/EditScriptableAttribute.cs using Guid(315cac858c8879242bc87164607c4c5d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9bdb4c92bd417167bbb5dd44d4781cd1') in 0.0185374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/StandaloneFileBrowserEditor.cs
+  artifactKey: Guid(2650af8de2cda46b99b1bc7cf5d30ca5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/StandaloneFileBrowserEditor.cs using Guid(2650af8de2cda46b99b1bc7cf5d30ca5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a2e16e484b1dee5fcab426c4935a0846') in 0.0180888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestJSON.cs
+  artifactKey: Guid(bc0d56263c32f2b40ac0a51ff971fd91) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestJSON.cs using Guid(bc0d56263c32f2b40ac0a51ff971fd91) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd0160acec20feea4b37d4c46f1b411eb') in 0.0157842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/Form/DropDownElementSetup.cs
+  artifactKey: Guid(1d900832b912e174caf9588091337710) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/Form/DropDownElementSetup.cs using Guid(1d900832b912e174caf9588091337710) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '49cff2a62d1c5325311c559435aaf8dd') in 0.0161272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/com.edia.uxf/README.txt
+  artifactKey: Guid(68be8632810febc4aaf7a5fac48be792) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/README.txt using Guid(68be8632810febc4aaf7a5fac48be792) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'af678d61163f7466ee8e0e34217abff3') in 0.0244674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Trackers/MouseWorldTracker.cs
+  artifactKey: Guid(7e116bc94825b784182983179cfbb420) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Trackers/MouseWorldTracker.cs using Guid(7e116bc94825b784182983179cfbb420) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ead131be5fbd8c522e55a9ee75945f0f') in 0.0186754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/WebFileElement.cs
+  artifactKey: Guid(f73de80303de48f48b82c596d06e24a0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/WebFileElement.cs using Guid(f73de80303de48f48b82c596d06e24a0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a171e9c5913bda37652b362abc74c5b7') in 0.0163077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestTrials.cs
+  artifactKey: Guid(c75a061652dc4b140bde679fe32f904f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestTrials.cs using Guid(c75a061652dc4b140bde679fe32f904f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '08e91035edbeadb6d6937f6716c7e493') in 0.0163147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/com.edia.uxf/Runtime/Prefabs/UI/NoteElement.prefab
+  artifactKey: Guid(c0bc9d5f81a6da84bb8401b0f06a6a4c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Prefabs/UI/NoteElement.prefab using Guid(c0bc9d5f81a6da84bb8401b0f06a6a4c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fcc57c08b19a0ccc849de7c4c6c51b2b') in 0.0433462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/DataHandling/HTTPPost.cs
+  artifactKey: Guid(37d3ef49a8abdaf40af92c99696a2caa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/DataHandling/HTTPPost.cs using Guid(37d3ef49a8abdaf40af92c99696a2caa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4f58814adac595e962771faaba16b3c3') in 0.0173607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/ExperimentProfileSelector.cs
+  artifactKey: Guid(348b50adaf435754aa3adb61b9d1155d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/ExperimentProfileSelector.cs using Guid(348b50adaf435754aa3adb61b9d1155d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '04950836e7676224f47905148c934998') in 0.0167611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/1px-9sliced.png
+  artifactKey: Guid(2fa4b430af934a14ca7c8a2347ebe690) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/1px-9sliced.png using Guid(2fa4b430af934a14ca7c8a2347ebe690) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '015daa3689b8f9e496483b119ebfc920') in 0.030786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/DataHandling/LocalFileDataHander.cs
+  artifactKey: Guid(94aa9867b1599cc409e0e35fc88bb8fc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/DataHandling/LocalFileDataHander.cs using Guid(94aa9867b1599cc409e0e35fc88bb8fc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '25356e78ee3cf753f7332c2f2966f6ce') in 0.0166807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/Block.cs
+  artifactKey: Guid(d91c38605e32387499d512719d0926b6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/Block.cs using Guid(d91c38605e32387499d512719d0926b6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '88d3af3a5214de20822ae624a96d1685') in 0.0161684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestEvents.cs
+  artifactKey: Guid(61b579328744ac14b9d63057f168819b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestEvents.cs using Guid(61b579328744ac14b9d63057f168819b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c8d4fcc54c911d28c17cf7fedce4d108') in 0.0175116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/AWSCredentials.cs
+  artifactKey: Guid(6545ca194e1ea6b4eb1a80a689e541cb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/AWSCredentials.cs using Guid(6545ca194e1ea6b4eb1a80a689e541cb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '57ec373bc059f4572df24c761efc6350') in 0.018769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/BlockingQueue.cs
+  artifactKey: Guid(e959e0875f8e93a44b4f663d3371f62d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/BlockingQueue.cs using Guid(e959e0875f8e93a44b4f663d3371f62d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f5b329d227c7bf9061fb3757476469a3') in 0.0151398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/ReorderableInspector/SerializedPropExtension.cs
+  artifactKey: Guid(f8c4c0d8e1b69564db9d1aa3fc7a2fb4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/ReorderableInspector/SerializedPropExtension.cs using Guid(f8c4c0d8e1b69564db9d1aa3fc7a2fb4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '84ceb7abbc4f2be401127198b0f00dc9') in 0.0155968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/com.edia.uxf/Tests/Editor/TestDataTable.cs
+  artifactKey: Guid(8edb318922394a340a8eaca34b78d3fa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/Editor/TestDataTable.cs using Guid(8edb318922394a340a8eaca34b78d3fa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2a1ff0051b1e3ed886a7c7cec950eb80') in 0.0164908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/DraggableUI.cs
+  artifactKey: Guid(51f945e5620a8ab47bd508d682077a50) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/DraggableUI.cs using Guid(51f945e5620a8ab47bd508d682077a50) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8135f8b8752b3f322a50c5cb75c7ae45') in 0.0185622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/com.edia.uxf/Runtime/Sprites/down-arrow-icon.png
+  artifactKey: Guid(f867079037c5ab3489f58720c87551d2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Sprites/down-arrow-icon.png using Guid(f867079037c5ab3489f58720c87551d2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '72b7b04d0e738eafd1d9ad491bb008b3') in 0.0310816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/Comment.cs
+  artifactKey: Guid(6e99fcc263e0faa43b398ccdce90eb56) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/Comment.cs using Guid(6e99fcc263e0faa43b398ccdce90eb56) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fc5e2009a44166b797247c21574d787b') in 0.017502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Session.cs
+  artifactKey: Guid(fa9f2505d11cc9e4aa44357b47b12905) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Session.cs using Guid(fa9f2505d11cc9e4aa44357b47b12905) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '623afc253b716bb1bcd40a714d5b6c41') in 0.0171886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/NotesController.cs
+  artifactKey: Guid(031e7be911f293d4b946af0d6e59e3c6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/NotesController.cs using Guid(031e7be911f293d4b946af0d6e59e3c6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0afdd4d5fad77b6a22de372cdbc95f92') in 0.0168626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/IStandaloneFileBrowser.cs
+  artifactKey: Guid(7609f7b6787a54496aa41a3053fcc76a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/UI/StandaloneFileBrowser/IStandaloneFileBrowser.cs using Guid(7609f7b6787a54496aa41a3053fcc76a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '80274e8247b71d2cf1080ae5b5444408') in 0.0155994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/com.edia.uxf/Editor/Scripts/Etc/ReorderableInspector/ReorderableArrayInspector.cs
+  artifactKey: Guid(1c49cad279b81bd4b9cfabf7fdbadf26) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Editor/Scripts/Etc/ReorderableInspector/ReorderableArrayInspector.cs using Guid(1c49cad279b81bd4b9cfabf7fdbadf26) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '26fdbdf9f6084048feea6a983daca159') in 0.0166965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/com.edia.uxf/Runtime/Scripts/Etc/Trial.cs
+  artifactKey: Guid(b19b957c813fced40b72f6ec30365b9e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Scripts/Etc/Trial.cs using Guid(b19b957c813fced40b72f6ec30365b9e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '184df87ccac342cb03b7afd432b391e8') in 0.0194653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/com.edia.uxf/Runtime/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(6858712ab402a3d43a59ba46412d9aad) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Runtime/Fonts/Roboto-Bold.ttf using Guid(6858712ab402a3d43a59ba46412d9aad) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '957d78adeb99cc82ab336ca4eadf61bc') in 0.0342283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/com.edia.uxf/Tests/TestableDataHandler.cs
+  artifactKey: Guid(a3ca84b4d014f3f45bdcd592eaf0bf9c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/com.edia.uxf/Tests/TestableDataHandler.cs using Guid(a3ca84b4d014f3f45bdcd592eaf0bf9c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bf0d953574b38c44124b38f80378949f') in 0.0163088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
