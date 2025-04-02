@@ -19,7 +19,7 @@ Relevant branches in this repo:
 
 ____
    
-⤵️  See the original UXF README below  ⤵️
+⤵️ See the original UXF README below ⤵️
 ____
 
 
