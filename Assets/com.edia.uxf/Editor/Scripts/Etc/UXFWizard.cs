@@ -22,17 +22,17 @@ namespace UXF.EditorUtils
 
         Vector2 scrollPos;
 
-        static UXFWizard()
-        {
-#if UNITY_2018_1_OR_NEWER
-            EditorApplication.projectChanged += OnProjectChanged;
-#else
-            EditorApplication.projectWindowChanged += OnProjectChanged;
-#endif
-        }
+//         static UXFWizard()
+//         {
+// #if UNITY_2018_1_OR_NEWER
+//             EditorApplication.projectChanged += OnProjectChanged;
+// #else
+//             EditorApplication.projectWindowChanged += OnProjectChanged;
+// #endif
+//         }
 
 
-        [MenuItem("UXF/Show setup wizard")]
+        //[MenuItem("UXF/Show setup wizard")]
         static void Init()
         {
             var window = (UXFWizard) EditorWindow.GetWindow(typeof(UXFWizard), false, "UXF Wizard");
