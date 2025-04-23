@@ -1,5 +1,10 @@
 
-v0.1.1:   
+v0.1.2:   
+- UXFWizard: removed `EditorApplication.projectChanged` eventlisteners to avoid wizard from popping up
+- UXFWizard: removed UXF menuitem
+- UXFSessionDisplay: removed UXF menuitem (=accessible via EDIA menu)
+- 
+- v0.1.1:   
 - removed Examples folder
 - removed StreamingAssets
 - removed Testing
