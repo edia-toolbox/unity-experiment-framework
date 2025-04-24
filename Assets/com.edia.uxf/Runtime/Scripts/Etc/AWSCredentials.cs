@@ -7,7 +7,7 @@ using UnityEngine;
 namespace UXF
 {
 
-    [CreateAssetMenu(fileName = "MyAWSCredentials", menuName = "UXF/AWS Credentials", order = 1)]
+    // [CreateAssetMenu(fileName = "MyAWSCredentials", menuName = "UXF/AWS Credentials", order = 1)]
     public class AWSCredentials : ScriptableObject
     {
         public string region;
