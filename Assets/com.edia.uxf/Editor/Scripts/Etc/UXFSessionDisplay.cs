@@ -16,7 +16,7 @@ namespace UXF.EditorUtils
 		static bool parsed;
 
 
-        [MenuItem("UXF/Show session debugger")]
+        // [MenuItem("UXF/Show session debugger")]
         static void Init()
         {
             FetchReferences();
