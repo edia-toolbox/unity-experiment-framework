@@ -1,0 +1,15 @@
+{
+  "name": "com.edia.uxf",
+  "displayName": "EDIA UXF fork",
+  "version": "0.1.1",
+  "unity": "6000.0",
+  "description": "EDIA fork of the Unity Experiment Framework.",
+  "keywords": [
+    "vr"
+  ],  
+  "author": {
+    "name": "Jack Brookes and EDIA"
+  },
+  "dependencies": {},
+  "hideInEditor": false
+}
