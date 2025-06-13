@@ -13,6 +13,7 @@ namespace UXF
     {
         private Dictionary<string, object> baseDict;
         private bool allowAdHocAdding;
+        private Object lockObject = new Object();
 
         /// <summary>
         /// Dictionary of results for a trial.
@@ -25,7 +26,10 @@ namespace UXF
             this.allowAdHocAdding = allowAdHocAdding;
             foreach (var key in initialKeys)
             {
-                baseDict.Add(key, string.Empty);
+                lock (lockObject)
+                {
+                    baseDict.Add(key, string.Empty);
+                }
             }
         }
 
@@ -38,13 +42,16 @@ namespace UXF
         {
             get { return baseDict[key]; }
             set {
-                if (allowAdHocAdding || baseDict.ContainsKey(key))
+                lock (lockObject)
                 {
-                    baseDict[key] = value;
-                }
-                else
-                {
-                    throw new KeyNotFoundException(string.Format("Custom header \"{0}\" does not exist!", key));
+                    if (allowAdHocAdding || baseDict.ContainsKey(key))
+                    {
+                        baseDict[key] = value;
+                    }
+                    else
+                    {
+                        throw new KeyNotFoundException(string.Format("Custom header \"{0}\" does not exist!", key));
+                    }
                 }
             }
         }
