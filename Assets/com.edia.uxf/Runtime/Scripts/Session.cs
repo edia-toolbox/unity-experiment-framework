@@ -698,6 +698,8 @@ namespace UXF
 
         void SaveResults()
         {
+            Trial.WaitForTasks();
+
             // generate list of all headers possible
             // hashset keeps unique set of keys
             HashSet<string> resultsHeaders = new HashSet<string>();

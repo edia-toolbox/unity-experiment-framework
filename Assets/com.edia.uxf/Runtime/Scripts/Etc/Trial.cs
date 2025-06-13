@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 using System.Collections.Specialized;
-
+using System.Threading.Tasks;
+using System.Collections.Concurrent;
+using System.IO;
 
 namespace UXF
 {
@@ -61,6 +63,11 @@ namespace UXF
         /// Dictionary of results in a order.
         /// </summary>
         public ResultsDictionary result;
+
+        // Used by the worker task
+        private static BlockingQueue<System.Action> blockingQueue = new BlockingQueue<System.Action>();
+        private static Task workerTask;
+        private static bool quitting = false;
 
         /// <summary>
         /// Manually create a trial. When doing this you need to add this trial to a block with block.trials.Add(trial)
@@ -277,7 +284,12 @@ namespace UXF
                     tracker.StopRecording();
                     if (tracker.Data.CountRows() > 0)
                     {
-                        SaveDataTable(tracker.Data, tracker.DataName, dataType: UXFDataType.Trackers);
+                        UXFDataTable table = tracker.Data;
+                        string name = tracker.DataName;
+                        ManageInWorker(() =>
+                        {
+                            SaveDataTable(table, name, dataType: UXFDataType.Trackers);
+                        });
                     }
                 }
                 catch (NullReferenceException)
@@ -292,9 +304,68 @@ namespace UXF
                 result[s] = settings.GetObject(s, string.Empty);
             }
         }
-    }
 
-    
+        /// <summary>
+        /// Adds a new command to a queue which is executed in a separate worker thread when it is available.
+        /// Warning: The Unity Engine API is not thread safe, so do not attempt to put any Unity commands here.
+        /// </summary>
+        /// <param name="action"></param>
+        public static void ManageInWorker(System.Action action)
+        {
+            if (workerTask == null)
+            {
+                workerTask = Task.Run(Worker);
+                quitting = false;
+            }
+
+            blockingQueue.Enqueue(action);
+        }
+
+        /// <summary>
+        /// The worker thread used when <see cref="ManageInWorker"/> is called.
+        /// </summary>
+        private static void Worker()
+        {
+            // performs FileIO tasks in seperate thread
+            foreach (var action in blockingQueue)
+            {
+                try
+                {
+                    action.Invoke();
+                }
+                catch (ThreadAbortException)
+                {
+                    break;
+                }
+                catch (IOException e)
+                {
+                    Utilities.UXFDebugLogError(string.Format("Error, file may be in use! Exception: {0}", e));
+                }
+                catch (System.Exception e)
+                {
+                    // stops thread aborting upon an exception
+                    Debug.LogException(e);
+                }
+
+                if (quitting && blockingQueue.NumItems() == 0)
+                {
+                    break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Wait for all tasks scheduled through <see cref="ManageInWorker"/>
+        /// </summary>
+        public static void WaitForTasks()
+        {
+            Utilities.UXFDebugLog("Waiting for tasks to finish");
+            quitting = true;
+            blockingQueue.Enqueue(() => {}); // ensures bq breaks from foreach loop
+            workerTask?.Wait();
+            Utilities.UXFDebugLog("Tasks finished");
+        }
+    }
 
     /// <summary>
     /// Status of a trial
